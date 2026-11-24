@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Dương Quốc Đạt</title>
+    <!-- Sử dụng Google Fonts để chữ đẹp và hiện đại hơn -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* Nền phía sau đen dịu */
+        body {
+            background: #111317;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #2b2f36;
+        }
+
+        /* Khung ở trong màu xám dịu mắt */
+        .profile-card {
+            background: #d1d5db;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Phần đầu xanh dịu hơn, bớt chói */
+        .header {
+            background: linear-gradient(135deg, #4a7c9b 0%, #5b8fa8 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: #f8fafc;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            background: #e5e7eb;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+            border: 4px solid rgba(255, 255, 255, 0.75);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.92;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 30px;
+            background: #d1d5db;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #2c5e7a;
+            border-bottom: 2px solid #b8bec7;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            background: #e5e7eb;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border-left: 4px solid #4a7c9b;
+        }
+
+        .info-item strong {
+            display: block;
+            font-size: 13px;
+            color: #525866;
+            margin-bottom: 3px;
+        }
+
+        .info-item span {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1f242d;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #dbe6ed;
+            color: #264e66;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .tag:hover {
+            transform: scale(1.04);
+            background: #c7d8e3;
+        }
+
+        .quote-box {
+            background: #ece5d3;
+            border-left: 4px solid #b88a3b;
+            padding: 15px;
+            border-radius: 8px;
+            font-style: italic;
+            color: #5c4519;
+            line-height: 1.6;
+        }
+
+        .goal-box {
+            background: #dce8e0;
+            border: 1px solid #b8cfc0;
+            padding: 15px;
+            border-radius: 10px;
+            color: #213d2c;
+            line-height: 1.6;
+        }
+
+        .goal-box p {
+            margin-bottom: 8px;
+        }
+
+        .goal-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #c2c7cf;
+            font-size: 13px;
+            color: #3f444e;
+            border-top: 1px solid #aeb4be;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Phần đầu trang -->
+        <div class="header">
+            <img src="https://i.postimg.cc/bNPmGHGB/images-(1).jpg" alt="Ảnh đại diện Dương Quốc Đạt" class="avatar">
+            <h1>Dương Quốc Đạt</h1>
+            <p>Học sinh lớp 12A4 • Kỷ nguyên 2009</p>
+        </div>
+
+        <!-- Phần nội dung chính -->
+        <div class="content">
+            <!-- Thông tin cơ bản -->
+            <div class="section">
+                <div class="section-title">📌 Thông tin cá nhân</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Họ và tên</strong>
+                        <span>Dương Quốc Đạt</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Ngày sinh</strong>
+                        <span>14 / 09 / 2009 (Xử Nữ)</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Lớp</strong>
+                        <span>12A4</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Trường / Trung tâm</strong>
+                        <span>TTGDNN - GDTX KVTC - PHTN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sở thích & Tính cách -->
+            <div class="section">
+                <div class="section-title">🎯 Sở thích & Tính cách</div>
+                <div class="hobbies">
+                    <span class="tag">🎮 Chơi game giải trí</span>
+                    <span class="tag">🎧 Nghe nhạc thư giãn</span>
+                    <span class="tag">📚 Đọc sách</span>
+                    <span class="tag">🌱 Ham học hỏi</span>
+                </div>
+            </div>
+
+            <!-- Mục tiêu & Định hướng -->
+            <div class="section">
+                <div class="section-title">🚀 Mục tiêu & Định hướng</div>
+                <div class="goal-box">
+                    <p><strong>🎯 Mong muốn hiện tại:</strong> Tập trung toàn lực cho năm học cuối cấp, ôn luyện thật tốt để tự tin vượt qua kỳ thi và <b>đỗ Tốt nghiệp THPT</b> với kết quả cao nhất.</p>
+                    <p><strong>🧭 Ước mơ tương lai:</strong> Hiện tại mình vẫn đang trong quá trình khám phá bản thân và tìm kiếm đam mê thực sự. Mình tin rằng việc hoàn thành tốt chặng đường lớp 12 sẽ là bước đệm vững chắc để mở ra nhiều cánh cửa cơ hội mới trong tương lai.</p>
+                </div>
+            </div>
+
+            <!-- Châm ngôn yêu thích -->
+            <div class="section" style="margin-bottom: 0;">
+                <div class="section-title">💡 Châm ngôn sống</div>
+                <div class="quote-box">
+                    "có thực mới vực được đạo ."
+                </div>
+            </div>
+        </div>
+
+        <!-- Chân trang -->
+        <div class="footer">
+            Trang web giới thiệu bản thân • Thiết kế dành riêng cho Dương Quốc Đạt (2026)
+        </div>
+    </div>
+
+</body>
+</html>
